@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Plain Light";
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    /* background-color: black ; */
+
+}
+
+.loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #040404;
+    padding: 15vh 5vw;
+}
+.line{
+    /* background-color: cadetblue; */
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+    /* flex-wrap: wrap; */
+}
+.line1p2{
+    margin-left: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1vw;
+}
+.line1p2 h5,h6{
+    font-weight: 100;
+    font-size: 3vw;
+    font-family: Silk serif;
+}
+.line1p2 h5{
+    text-align: right;
+    width: 100px;
+}
+.line h1 {
+    letter-spacing: -2px;
+    word-spacing: 1vw;
+    line-height:9vw;
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.line span{
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    word-spacing: 1vw;
+    line-height:9vw;
+    font-size: 7.4vw;
+    animation: nowAnime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-weight: 700;
+}
+@keyframes nowAnime {
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 0;
+        font-weight: 700;
+
+    }
+    /* 25%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 0;
+        font-weight: 500;
+} */
+    /* 75%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        opacity: 1;
+        font-weight: 500;
+
+    } */
+    100%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        opacity: 1;
+        font-weight: 400;
+    }
+}
+.main{                /* main ko hight nhi dege q ki locomotive ka use krtetime hme parent ko ojheight nhi deni hote h */
+position: relative;
+background-color: #030303;
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
+
+
+echo "# obeys-project" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Divyansh4535/obeys-project.git
+git push -u origin main
